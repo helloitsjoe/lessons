@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #dropbox{
+            width: 100%;
+            height: 100%;
+            background: red;
+        }
+        #background, #foreground {
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="dropbox">
+        <img id="background"/>
+        <img id="foreground" src='images/mask.png'/>
+    </div>
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
